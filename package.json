@@ -4,13 +4,13 @@
   "description": "ejemplo practico para clase de fontela - admin de proyectos - sbe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RVLareu/sbe-tools.git"
   },
-  "author": "",
+  "author": "Román Vázquez Lareu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RVLareu/sbe-tools/issues"
@@ -18,5 +18,7 @@
   "homepage": "https://github.com/RVLareu/sbe-tools#readme",
   "devDependencies": {
     "@cucumber/cucumber": "^8.5.3"
+  },
+  "dependencies": {},
+  "keywords": []
   }
-}
