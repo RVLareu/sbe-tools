@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RVLareu/sbe-tools/issues"
   },
-  "homepage": "https://github.com/RVLareu/sbe-tools#readme"
+  "homepage": "https://github.com/RVLareu/sbe-tools#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.5.3"
+  }
 }
