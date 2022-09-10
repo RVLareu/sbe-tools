@@ -1,0 +1,19 @@
+{
+  "name": "sbe-tools",
+  "version": "1.0.0",
+  "description": "ejemplo practico para clase de fontela - admin de proyectos - sbe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVLareu/sbe-tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RVLareu/sbe-tools/issues"
+  },
+  "homepage": "https://github.com/RVLareu/sbe-tools#readme"
+}
