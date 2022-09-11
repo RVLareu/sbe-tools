@@ -1,23 +1,28 @@
 const assert = require('assert');
 const { Given, When, Then } = require('@cucumber/cucumber');
 
-function isItFriday(today) {
-    if (today === "Friday") {
-      return "TGIF";
+function isShipmentFree(client, amountOfBooks) {
+    if (client === "VIP" && amountOfBooks >= 5) {
+      return "free";
     } else {
-      return "Nope";
+      return "charged";
     }
   }
   
 
-Given('today is {string}', function (givenDay) {
-  this.today = givenDay;
+Given ('the client is {string}', function (client) {
+    this.client = client;
+})
+
+Given ('the client bought {int}', function (amountOfBooks) {
+  this.amountOfBooks = amountOfBooks;
+})
+
+
+When('the client wants to pay for the cart', function () {
+  this.shipment = isShipmentFree(this.client, this.amountOfBooks);
 });
 
-When('I ask whether it\'s Friday yet', function () {
-  this.actualAnswer = isItFriday(this.today);
-});
-
-Then('I should be told {string}', function (expectedAnswer) {
-  assert.strictEqual(this.actualAnswer, expectedAnswer);
+Then('the shipment should be {string}', function (shipment) {
+  assert.equal(this.shipment, shipment);
 });
